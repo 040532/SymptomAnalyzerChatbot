@@ -1,5 +1,6 @@
 sentence_transformers==2.2.2
 huggingface-hub==0.14.1  # ✅ critical: fixes the ImportError
+tokenizers==0.13.3  # ✅ Prebuilt wheels available, no Rust needed
 langchain
 flask
 pypdf
