@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -77,6 +78,16 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Ignore PDF data
+Data/medical_book.pdf
+
+# Or ignore entire Data folder
+Data/
+
+# Ignore Jupyter notebooks or research folder
+research/
+*.ipynb
 
 # IPython
 profile_default/
