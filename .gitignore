@@ -84,7 +84,8 @@ Data/medical_book.pdf
 
 # Or ignore entire Data folder
 Data/
-
+static/audio
+static/
 # Ignore Jupyter notebooks or research folder
 research/
 *.ipynb

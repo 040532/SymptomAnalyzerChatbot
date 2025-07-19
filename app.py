@@ -7,6 +7,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from src.prompt import *
+from src.speech_utils import generate_audio_from_text
 import os
 from langchain_pinecone import PineconeVectorStore
 
@@ -60,9 +61,19 @@ def chat():
     msg = request.form["msg"]
     input = msg
     print(input)
+    # Run the RAG chain
     response = rag_chain.invoke({"input": msg})
+    answer = response["answer"]
     print("Response : ", response["answer"])
-    return str(response["answer"])
+
+    # Generate audio
+    audio_filename = generate_audio_from_text(answer)
+    audio_url = f"/static/audio/{audio_filename}"
+
+    return jsonify({
+    "answer": answer,
+    "audio": audio_url
+    })
 
 
 
