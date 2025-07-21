@@ -88,7 +88,7 @@ Visit http://localhost:5000 in your browser.
 
 
 
-## 💡** Future Enhancements:**
+## 💡**Future Enhancements:**
 
 ⏺️ Microphone input & live voice recognition
 
