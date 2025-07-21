@@ -40,14 +40,14 @@ git clone https://github.com/your-username/ai-voice-chatbot.git
 cd ai-voice-chatbot
 ```
 
-2. Create Conda Environment
+### 2. Create Conda Environment
 ```bash
 
 conda create -n chatbot-env python=3.9
 conda activate chatbot-env
 ```
 
-3. Install Dependencies
+### 3. Install Dependencies
 ```bash
 
 pip install -r requirements.txt
@@ -60,14 +60,13 @@ Also install ffmpeg for pydub:
 conda install -c conda-forge ffmpeg
 ```
 
-4. Set Your Together API Key
-5. 
-Create a .env file and add:
+### 4. Set Your Together API Key
+### 5. Create a .env file and add:
 
 TOGETHER_API_KEY=your_actual_key_here
 Or set it in app.py directly if you're testing.
 
-🏃 Run the App
+## 🏃 Run the App
 ```bash
 
 python app.py
