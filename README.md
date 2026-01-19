@@ -1,6 +1,6 @@
 # MediSage - AI based Voice enabled Medical Chatbot
 
-MediSage is a full-stack AI chatbot web application built using **Flask**, **Pinecone API**, **Together API**, and **JavaScript Web Speech API**. It allows users to have a real-time chat experience where:
+MediSage is a full-stack AI-powered RAG-assisted chatbot web application built using **Langchain**, **Flask**, **Pinecone API**, **Together API**, and **JavaScript Web Speech API**. It allows users to have a real-time chat experience where:
 
 - Messages are sent to a Together AI-powered LLM
 - The bot replies instantly in text and **voice**
